@@ -1,17 +1,21 @@
 html{
-	background: #f5faf6;
-	//background: #fbfcf9;
+	//background: #f5faf6;
+	background: #fbfcf9;
+
+
 }
 header{
 	height: auto;
 	font-size: 18pt;
 	text-align: center;
-	background: #c9f0cb;
+	//background: #c9f0cb;
+	background: #d3fad2;
 	position: fixed;
   	top: 0;
   	left: 0;
   	z-index: 9999;
   	width: 100%;
+  	border-bottom: 3px double #e6d8d5;
 	
 }
 .row{
@@ -19,6 +23,7 @@ header{
 	margin-bottom: .5em;
 	padding-top: 1em;
 	padding-bottom: 1em;
+	z-index: 1;
 }
 .construction{
 	font-size: 18pt;
