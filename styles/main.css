@@ -1,9 +1,32 @@
-html {
-  background: #1f661c; }
-
 header {
-  font-family: Open Sans;
+  height: 3em;
   font-size: 18pt;
-  color: white; }
+  text-align: center; }
+
+.row {
+  border-bottom: 1px solid #e6d8d5;
+  margin-bottom: .5em;
+  padding-top: 1em;
+  padding-bottom: 1em; }
+
+.construction {
+  font-size: 18pt;
+  height: 5em; }
+
+.project {
+  height: 15em;
+  width: 15em;
+  background: #3f803d;
+  border: 2px inset #1f661c;
+  clear: both;
+  float: left; }
+
+.projectDescription {
+  clear: both;
+  display: inline-block;
+  float: left; }
+
+span {
+  display: block; }
 
 /*# sourceMappingURL=main.css.map */
