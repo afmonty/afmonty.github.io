@@ -1,108 +1,162 @@
-<!DOCTYPE html>
-<htlm>
-  <head>
-  	<title></title>
-  	<link rel="stylesheet" type"text/css" href="styles/normalize.css">
-  	<link rel="stylesheet" type="text/css" href="styles/main.css">
-    <link rel="stylesheet" type="text/css" href="styles/skeleton.css">
-  </head>
-  <body>
-  	<nav></nav>
-  	<header>
-  		<div>Anna F Hunter
-      </div>
-      <a href="https://www.tumblr.com/blog/annafmonty" class = "button">BLOG</a>
-      <input type="submit" class='button' value="CONTACT" onclick="window.location.href='mailto:anna@annafhunter.com'">
-      <a href="https://drive.google.com/open?id=0B05VYkeipcu-Ui0zNDBKbnVCODQ" class = "button">Résumé</a>
-  	</header>
-  	<main class = "container">
-  		<section class = "construction"></section>
-      <div class="twelve columns">
-        <div class = "row">
-          <div class = "one-half column">
-      	  	<div class ="project">
-            <img src = "images/talentShow.png"/>
-              <a href="https://thetalentshow.herokuapp.com/"></a>
-            </div>
-          </div>
-          <div class = "one-half column">
-      		  <div class = "projectDescription">
-              <a href="https://thetalentshow.herokuapp.com/" class = "title">The Talent Show</a>
-              <span class = "desc">About: This application allows student type users to submit videos to schools in consideration for their various programs (eg. arts, sports). I completed this in 14 days using React with Backbone collections and models.  I am also using a PostgrSQL database with KNEX and bookshelf.</span>
-              <span class = "likes">Likes: Completing my project, or at least completing version 1 gave me a profound sense of accomplishment.  I learned a lot, fast. I created this after 2 months of coding.  I really enjoyed the backend routing and database work.</span>
-              <span class="dislikes">Challenges: I found styling most challenging and frustrating.</span>
-            </div>
-          </div>
-        </div>
-        <div class = "row">
-          <div class = "one-half column">
-            <div class ="project">
-              <img src = "images/photoAlbum.png"
-              <a href="https://anna-hunter-photo-album.surge.sh/"></a>
-            </div>
-          </div>
-          <div class = "one-half column">
-            <div class = "projectDescription">
-              <a href="http://anna-hunter-photo-album.surge.sh/" class = "title">Photo Album</a>
-              <span class = "desc">About: I initially created this using multiple click event listeners which repeated A Lot of code.  I did it over one weekend on day 18 of my front-end learnng journey.  I created a large collection and used JQuery.</span>
-              <span class = "likes">Likes:  I LOVE this project because it marks the point of understanding for me.  I knew when I looked at the challenge that I could accomplish it. And on day 25, I created this DRY version!</span>
-              <span class="dislikes">Challenges: Styling will alway be a challenge, but from a code standpoint, it was finding a way to write it more efficiently.</span>
-            </div>
-          </div>
-        </div>
-        <div class = "row">
-          <div class = "one-half column">
-            <div class ="project">
-              Coming soon
-              <a href="https://thetalentshow.herokuapp.com/">
-              </a>
-            </div>
-          </div>
-          <div class = "one-half column">
-            <div class = "projectDescription">
-              <h5 class = "title">100 Days of Code</h5>
-              <span class = "desc">About: </span>
-              <span class = "likes">What I liked</span>
-              <span class="dislikes">Challenges</span>
-            </div>
-          </div>
-        </div>
-        <div class = "row">
-          <div class = "one-half column">
-            <div class ="project">
-              <img src = "images/pointerApp.png"
-              <a href="http://pointerapp.herokuapp.com"></a>
-            </div>
-          </div>
-          <div class = "one-half column">
-            <div class = "projectDescription">
-              <a href="http://pointerapp.herokuapp.com" class = "title">Pointer App</a>
-              <span class = "desc">About: This is a proof of concept project done by a group of 10 front end engineers.  We completed it in 6 days.  It's purpose is to allow the user to highlight words as they are reading to help children learn to read.</span>
-              <span class = "likes">Likes: I enjoyed working in a collaborative environment. We used React which makes collaboratin very easy.  We also gained great experiece with Github.</span>
-              <span class="dislikes">Challenges: I was challenged learning the backend on this project. I found that I enjoy back end routing and database structure more than styling.</span>
-            </div>
-          </div>
-        </div>
-        <div class = "row">
-          <div class = "one-half column">
-            <div class ="project">
-              <img src = "images/bestBurger.png"/>
-              <a href="http://impartial-party.surge.sh/"></a>
-            </div>
-          </div>
-          <div class = "one-half column">
-            <div class = "projectDescription">
-              <a href="http://impartial-party.surge.sh/" class = "title">Best Burgers</a>
-              <span class = "desc">About: This app is for ranking hamburgers.  It was completed by a designer, two front end developers, and a rails develper over one weekend.</span>
-              <span class = "likes">What I liked:  I enjoyed working on a team. We had a great time and learned a lot from each other. </span>
-              <span class="dislikes">Challenges:  This was my first experience with AJAX and using Github with a team.  Completing Backbone AJAX calls and merge conflicts were our challenge.</span>
-            </div>
-          </div>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AI-assisted short-form video, product demos, and social creative by Anna Hunter.">
+  <meta name="theme-color" content="#100e0d">
+  <meta property="og:title" content="Anna Hunter | AI Video Creator">
+  <meta property="og:description" content="AI-assisted product stories and short-form video built for social.">
+  <title>Anna Hunter | AI Video Creator</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <a class="skip-link" href="#work">Skip to selected work</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Anna Hunter home">AH<span>.</span></a>
+    <nav aria-label="Primary navigation">
+      <a href="#work">Work</a>
+      <a href="#process">Process</a>
+      <a class="nav-cta" href="mailto:annafmonty@gmail.com?subject=AI%20video%20project">Start a project</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero shell" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">AI video creator · creative technologist</p>
+        <h1 id="hero-title">Product stories that <em>move.</em></h1>
+        <p class="hero-lede">I turn product briefs into social-first videos—concept, script, AI-assisted visuals, voice, motion, captions, and final edit.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#work">Watch selected work</a>
+          <a class="button text-button" href="mailto:annafmonty@gmail.com?subject=AI%20video%20project">Tell me about your project <span aria-hidden="true">↗</span></a>
         </div>
       </div>
-  		
+      <div class="hero-reel" aria-label="Featured AI-assisted spec video">
+        <span class="frame-label">Featured / vertical social</span>
+        <video controls muted playsinline preload="metadata" poster="assets/wellness-poster.png">
+          <source src="assets/wellness-spec-ad.mp4" type="video/mp4">
+          Your browser does not support embedded video.
+        </video>
+        <p>Faceless wellness product concept <span>Spec work</span></p>
       </div>
-  	</main>
-  	<footer></footer>
-  </body>
-</htlm>
+    </section>
+
+    <section class="marquee" aria-label="Capabilities">
+      <div>Concepting <span>✦</span> Script + hooks <span>✦</span> AI visuals <span>✦</span> Voice + captions <span>✦</span> Vertical editing <span>✦</span></div>
+    </section>
+
+    <section class="work shell" id="work" aria-labelledby="work-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Selected work</p>
+          <h2 id="work-title">Built to earn the next second.</h2>
+        </div>
+        <p>Every piece is labeled honestly. Spec concepts demonstrate the creative approach; owned-product work promotes Anna's own offers.</p>
+      </div>
+
+      <div class="work-grid">
+        <article class="project project-wide">
+          <div class="media landscape">
+            <video controls playsinline preload="metadata" poster="assets/ai-video-process-poster.jpg">
+              <source src="assets/ai-video-process-case-study.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="project-copy">
+            <p class="project-number">01 / Process film</p>
+            <h3>Brief to Variant</h3>
+            <p>A one-minute case study showing how a product brief becomes two controlled hooks, with claim guardrails and delivery checks built into the workflow.</p>
+            <ul>
+              <li>Creative direction + script</li>
+              <li>AI-assisted footage + voice</li>
+              <li>Motion design + edit + captions</li>
+            </ul>
+            <span class="label">Portfolio case study</span>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="media vertical">
+            <video controls playsinline preload="metadata" poster="assets/expense-poster.png">
+              <source src="assets/expense-cafe-spec-ad.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="project-copy">
+            <p class="project-number">02 / Direct response</p>
+            <h3>Still at the Table</h3>
+            <p>A creator-led expense-management concept built around a concrete café pain point, product UI, and a match-to-resolution structure.</p>
+            <span class="label">Spec work</span>
+          </div>
+        </article>
+
+        <article class="project project-accent">
+          <div class="media vertical">
+            <video controls playsinline preload="metadata" poster="assets/wellness-poster.png">
+              <source src="assets/wellness-spec-ad.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="project-copy">
+            <p class="project-number">03 / Product story</p>
+            <h3>Simple to Keep</h3>
+            <p>A faceless wellness-product ad for a mature audience, using tactile, product-centered imagery instead of a generic talking avatar.</p>
+            <span class="label">Spec work</span>
+          </div>
+        </article>
+
+        <article class="project project-wide reverse">
+          <div class="media vertical compact">
+            <video controls playsinline preload="metadata" poster="assets/ai-workflow-poster.png">
+              <source src="assets/ai-workflow-starter-demo.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="project-copy">
+            <p class="project-number">04 / Owned product</p>
+            <h3>AI Workflow Starter</h3>
+            <p>A concise product demo for a real SoloOS digital offer, focused on one safe, repeatable workflow and clear privacy boundaries.</p>
+            <ul>
+              <li>Real product scope and screens</li>
+              <li>No invented customer claims</li>
+              <li>Social-first 9:16 delivery</li>
+            </ul>
+            <span class="label">Anna's own product</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="process" id="process" aria-labelledby="process-title">
+      <div class="shell">
+        <div class="section-heading light">
+          <div>
+            <p class="eyebrow">How I work</p>
+            <h2 id="process-title">Fast enough for social. Thoughtful enough for your brand.</h2>
+          </div>
+          <p>My engineering background shows up in the process: clear inputs, controlled iterations, careful QA, and deliverables that work where they are supposed to.</p>
+        </div>
+        <ol class="steps">
+          <li><span>01</span><h3>Find the angle</h3><p>Audience, placement, product truth, and the one idea worth stopping for.</p></li>
+          <li><span>02</span><h3>Build the system</h3><p>Script, hooks, shot plan, visual generation, voice, motion, and captions.</p></li>
+          <li><span>03</span><h3>Polish the cut</h3><p>Human review for pacing, continuity, claims, accessibility, and final export.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="contact shell" aria-labelledby="contact-title">
+      <p class="eyebrow">Have a product to explain?</p>
+      <h2 id="contact-title">Let's make the scroll <em>stop.</em></h2>
+      <p>Send the product, audience, placement, and deadline. I'll reply with the right questions and a clear next step.</p>
+      <a class="button primary" href="mailto:annafmonty@gmail.com?subject=AI%20video%20project&body=Product%3A%0AAudience%3A%0AWhere%20the%20video%20will%20run%3A%0ADeadline%3A">Start a conversation</a>
+    </section>
+  </main>
+
+  <footer class="site-footer shell">
+    <div><strong>Anna Hunter</strong><br>AI video creator + creative technologist</div>
+    <div class="footer-links">
+      <a href="mailto:annafmonty@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/annahunter-monty" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.instagram.com/saroanhold/" target="_blank" rel="noopener">Instagram</a>
+    </div>
+    <p>Round Rock, Texas · Available for remote projects</p>
+  </footer>
+</body>
+</html>
